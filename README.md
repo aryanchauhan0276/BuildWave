@@ -15,7 +15,7 @@ and support a wide variety of game genres and play styles.
 This solution address the problem statement by utilizing open source libraries & models available. This solution takes the dataset from Kaggle mentioned as “playstore_games_with_descriptions.csv” which consists over 15000+ recrords. Then, continues to use sentence transformers available on hugging face to embedded the text into numericals and then these numericals are scaled down using the FAISS library from facebook to optimize the model.
 The user input is embedded using the same hugging face transformers and using semantic search and Keybert the recommendation is generated.
 
-*Tech Stack-*
+# *Tech Stack-*
 o	Sentence Transformers – Hugging Face
 o	FAISS – Facebook
 o	StreamLit
@@ -24,10 +24,10 @@ o	Kaggle Dataset
 o	Pandas
 o	Numpy
 
-*The Models –*
+# *The Models –*
 Dataset – Kaggle 
 To date (April 2020), Android is still the most popular mobile operating system in the world. Taking into account billion of Android users worldwide, mining this data has the potential to reveal user behaviors and trends in the whole global scope.
-app.csv with 15000+ rows and 18 columns.
+
 
 *Sentence Transformer all-MiniLM-L6-v2- Hugging Face*
 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search. 
@@ -36,6 +36,7 @@ Without sentence-transformers, you can use the model like this: First, you pass 
 
 *FAISS*
 FAISS (Facebook AI Similarity Search) is an open-source library developed by Meta AI (FAIR) designed for efficient similarity search and clustering of dense vectors. AISS solves this by organizing vectors into specialized data structures called indexes, allowing applications to rapidly retrieve the most similar items (nearest neighbors) from millions or billions of data points—even when the data exceeds RAM capacity. It is widely used in semantic search, recommendation systems, and giving long-term memory to large language models (RAG pipelines).
+
 *Streamlit*
 Streamlit is an open-source Python framework used to build and deploy interactive web applications rapidly. It allows developers to create clean, responsive frontends entirely in Python without needing HTML, CSS, or JavaScript.
 
